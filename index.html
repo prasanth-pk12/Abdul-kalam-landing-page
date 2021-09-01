@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation Circle Text Logo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="head">
+      <div class="topnav" id="myTopnav">
+
+        <div class="nav-logo">
+          <div class="circle">
+            <div class="logo"></div>
+            <div class="text">
+              <p>Dr.APJ.Abdul Kalam </p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()" style="color: #ffff;">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h1>Missile man of India </h1> <br>
+      <p>
+        Dr. A.P.J. Abdul Kalam called as the 'Missile Man' for his great contribution towards India's Missile
+        Programme
+        as the leader of Defence Research & Development Organisation (DRDO) .</p>
+      <a href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam">Explore</a>
+    </div>
+  </header>
+
+  <script>
+    const text = document.querySelector('.text p');
+    text.innerHTML = text.innerHTML.split("").map((char, i) =>
+      `<span style = "transform:rotate(${i * 19}deg )"> ${char} </span>`
+    ).join("");
+
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
