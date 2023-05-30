@@ -2,7 +2,7 @@
 
 The "Abdul Kalam Landing Page" is a simple yet informative website dedicated to providing insights into the life and achievements of Dr. APJ Abdul Kalam, the renowned Indian scientist and former President of India. Developed using HTML, CSS, and JavaScript, this landing page serves as a gateway to learn more about Abdul Kalam by redirecting users to his Wikipedia page.
 
-- Link : https://prasanth-pk12.github.io/Abdul-kalam-landing-page/
+- Link : https://prasanth-pk12.github.io/abk-landing-page/
 
 ## Technology used :
 
